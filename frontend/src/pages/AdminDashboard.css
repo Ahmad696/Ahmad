@@ -1,0 +1,193 @@
+.admin-dashboard {
+  width: 100%;
+}
+
+.dashboard-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tab {
+  padding: 12px 30px;
+  border: none;
+  background: white;
+  color: #666;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab:hover {
+  background: #f8f9fa;
+}
+
+.tab.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.jobs-section h2,
+.applications-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.admin-table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.admin-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+  gap: 15px;
+}
+
+.admin-card-header h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.job-meta,
+.app-meta {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.status-badge {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.status-badge.active,
+.status-badge.accepted {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-badge.inactive {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.admin-card-body {
+  margin-bottom: 20px;
+}
+
+.job-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.job-stats {
+  display: flex;
+  gap: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.applicant-info {
+  margin-bottom: 15px;
+}
+
+.applicant-info p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.cover-letter {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.cover-letter strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cover-letter p {
+  color: #555;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.resume-link {
+  margin-top: 15px;
+}
+
+.admin-card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .dashboard-tabs {
+    flex-direction: column;
+  }
+
+  .tab {
+    width: 100%;
+  }
+
+  .admin-card {
+    padding: 20px;
+  }
+
+  .admin-card-header {
+    flex-direction: column;
+  }
+
+  .admin-card-actions {
+    flex-direction: column;
+  }
+
+  .admin-card-actions button {
+    width: 100%;
+  }
+}
